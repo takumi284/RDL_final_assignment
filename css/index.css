@@ -9,13 +9,21 @@ nav.floating {
 
 .first-view {
     height: calc(100vh - 110px);
-    background: url(../images/index/bg_main.jpg);
+    background: url(../images/index/back_main.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     display: flex;
     align-items: center;
 }
+
+div.image_circle {
+    width: 100px;
+    height:100px;
+    border-radius:50%;
+    background-image: url("images/index/logo.png");
+}
+
 
 .first-view-text {
     width: 100%;
