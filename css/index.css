@@ -7,6 +7,14 @@ nav.floating {
     background-color: #ffffff;
 }
 
+
+#image {
+	object-fit:cover;
+	border-radius:50%;
+    width:  110px;       /* ※縦横を同値に */
+    height: 110px;       /* ※縦横を同値に */
+}
+
 .first-view {
     height: calc(100vh - 110px);
     background: url(../images/index/back_main.jpg);
