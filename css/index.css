@@ -191,10 +191,10 @@ img {
     }
 }
 
-.footer-logo {
+.sns-logo{
     display: block;
-    width: 150px;
-    margin-top: 90px;
+    width: 300px;
+    margin: 0 0 0 auto;
 }
 
 .copyright {
