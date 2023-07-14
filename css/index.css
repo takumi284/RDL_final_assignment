@@ -51,10 +51,56 @@ div.image_circle {
     line-height: 72px;
 }
 
+.first-view-text h2 {
+    font-family: 'Sawarabi Mincho', serif;
+    font-size: 45px;
+    line-height: 72px;
+}
+
 .first-view-text p {
     font-size: 18px;
     margin-top: 20px;
 }
+
+.about {
+    height: calc(100vh - 110px);
+    /* background: url(../images/index/back_main.jpg); */
+    background-color:#E0FFFF;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+
+    
+}
+
+.center {
+    text-align: center;
+}
+
+.about-text{
+
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+
+    position: relative;
+    text-align: center;
+    font-weight: 700;
+    display: block;
+    padding-top: 3px;
+    font-size: 10px;
+    font-family: initial;
+    color: #0B8C43;
+    letter-spacing: .15em;
+
+}
+
 
 .lead {
     max-width: 1200px;
