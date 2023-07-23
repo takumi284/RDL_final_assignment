@@ -63,7 +63,8 @@ div.image_circle {
 }
 
 .about {
-    height: calc(100vh - 110px);
+    /* height: calc(100vh - 110px); */
+    height: calc(100% - 300px);
     background-color:#E0FFFF;
     background-repeat: no-repeat;
     background-position: center center;
@@ -78,23 +79,69 @@ div.image_circle {
     line-height: 72px;
     margin-right: auto;
     margin-left: auto;
-    width: 100px;
+    padding-bottom: 80px;
+    /* width: 100px; */
 }
 .about-text h2{
-    font-family: 'Sawarabi Mincho', serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    /* font-family: 'Sawarabi Mincho', serif; */
     font-size: 30px;
     line-height: 72px;
+    /* vertical-align: text-top; */
 }
 
 .about-text h3{
-    font-family: 'Sawarabi Mincho', serif;
+    /* font-family: 'Sawarabi Mincho', serif; */
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: 20px;
-    line-height: 72px;
+    line-height: 300px;
+    vertical-align: text-top;
 }
 
 .center {
     text-align: center;
 }
+
+
+.wrap {
+    margin: 0;
+    display: flex;
+    text-align: center;
+}
+.A {
+    /* background-color: red; */
+    height: 60px;
+    flex: 1;
+    
+    margin-right: 1rem;
+}
+.line {
+    margin: 0 1rem;
+    width: 2px;
+    background-color: #000;
+}
+.B {
+    /* background-color: blue; */
+    height: 60px;
+    flex: 1;
+    
+    margin-left: 1rem;
+}
+
+
+
+.vertical-align{
+    font-family: "Hiragino Mincho ProN","游明朝","Yu Mincho",YuMincho,HiraMinProN-W3,"Noto Serif JP",serif;
+    margin-bottom: 35px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: .15em;
+    line-height: 2.2em;
+    font-size: 16px;
+}
+
+
+
 
 
 .lead {
@@ -161,8 +208,8 @@ img {
     margin-right: 20px;
 }
 
+/* フォント変更追記 */
 .site-menu ul li a {
-    /* font-family: 'Sawarabi Mincho', serif; */
     font-family: 'Noto Sans JP', sans-serif;
 }
 
