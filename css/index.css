@@ -11,8 +11,8 @@ nav.floating {
 #image {
 	object-fit:cover;
 	border-radius:50%;
-    width:  110px;       /* ※縦横を同値に */
-    height: 110px;       /* ※縦横を同値に */
+    width:  105px;       /* ※縦横を同値に */
+    height: 105px;       /* ※縦横を同値に */
 }
 
 .first-view {
@@ -23,6 +23,28 @@ nav.floating {
     background-size: cover;
     display: flex;
     align-items: center;
+}
+.first-view-recruit{
+    height: calc(55vh - 100px);
+    background: url(../images/index/recruit.jpg);
+    margin-left: 10px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.margin{
+
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.item-color{
+    background-color: aquamarine;
 }
 
 div.image_circle {
@@ -57,6 +79,13 @@ div.image_circle {
     line-height: 72px;
 }
 
+.first-view-text h3{
+    margin-top: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 56px;
+    line-height: 72px;
+}
+
 .first-view-text p {
     font-size: 18px;
     margin-top: 20px;
@@ -74,6 +103,7 @@ div.image_circle {
 }
 
 .about-text{
+    font-family: 'Noto Sans JP', sans-serif;
     text-align: center;
     font-size: 45px;
     line-height: 72px;
@@ -83,8 +113,6 @@ div.image_circle {
     /* width: 100px; */
 }
 .about-text h2{
-    font-family: 'Noto Sans JP', sans-serif;
-    /* font-family: 'Sawarabi Mincho', serif; */
     font-size: 30px;
     line-height: 72px;
     /* vertical-align: text-top; */
@@ -141,6 +169,35 @@ div.image_circle {
 }
 
 
+.ir-view {
+    height: calc(100vh - 110px);
+    background: url(../images/index/ir.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.ir-view-text {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    color: black;
+    
+    font-weight: bold;
+    text-shadow: 1px 1px 10px #4b2c14;
+}
+
+
+.yumintyo{
+    font-family: "Hiragino Mincho ProN","游明朝","Yu Mincho",YuMincho,HiraMinProN-W3,"Noto Serif JP",serif;
+    text-shadow: none;
+}
+
 
 
 
@@ -190,6 +247,37 @@ img {
     align-items: center;
 }
 
+
+
+/* 写真を2行2列で配置 */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2列 */
+    grid-template-rows: 1fr 1fr;    /* 2行 */
+    gap: 10px; /* グリッドアイテム間の隙間を設定（必要に応じて調整） */
+    text-shadow:none;
+}
+.grid-item {
+    line-height: 72px;
+    font-size: 23px;
+    border: 2px solid #000; /* グリッドアイテムの境界線を追加（任意のスタイルで変更可能） */
+    padding: 10px; /* グリッドアイテムの内側の余白を設定（必要に応じて調整） */
+}
+
+.grid-item-white {
+    line-height: 72px;
+    font-size: 23px;
+    border: none; /* グリッドアイテムの境界線を追加（任意のスタイルで変更可能） */
+    padding: 10px; /* グリッドアイテムの内側の余白を設定（必要に応じて調整） */
+}
+
+
+
+.grid-item p{
+    margin: 0px;
+}
+
+
 .toggle-menu-button {
     display: none;
 }
@@ -214,6 +302,40 @@ img {
 }
 
 @media (max-width: 800px) {
+
+    .first-view-text h3{
+        margin-top: 155px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 45px;
+        line-height: 72px;
+    }
+
+    .grid-item-white {
+        line-height: 72px;
+        font-size: 18px;
+        border: none; /* グリッドアイテムの境界線を追加（任意のスタイルで変更可能） */
+        padding: 10px; /* グリッドアイテムの内側の余白を設定（必要に応じて調整） */
+    }
+
+    .first-view-text h2 {
+        font-family: 'Sawarabi Mincho', serif;
+        font-size: 28px;
+        line-height: 50px;
+    }
+
+    .about-text h2{
+        font-size: 26px;
+        line-height: 72px;
+        /* vertical-align: text-top; */
+    }
+
+    #image {
+        object-fit:cover;
+        border-radius:50%;
+        width:  50px;       /* ※縦横を同値に */
+        height: 50px;       /* ※縦横を同値に */
+    }
+
     .site-menu ul {
     display: block;
     text-align: center;
@@ -221,6 +343,11 @@ img {
 
     .site-menu li {
         margin-top: 20px;
+    }
+
+    .lead {
+        max-width: 400px;
+        margin: 60px auto;
     }
 
     .header {

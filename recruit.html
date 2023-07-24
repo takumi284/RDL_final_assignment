@@ -2,8 +2,8 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>名城大学情報工学部 非公式HP</title>
-        <meta name="description" content="名城大学情報工学部非公式Webサイト">
+        <title>KOSE MARKET ホームページ</title>
+        <meta name="description" content="愛知県名古屋市を中心としたスーパー。ニュースリリース、採用情報などをご紹介します。">
         <meta name="viewport" content="width=device-width">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/script.js"></script>
@@ -11,20 +11,27 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+
+        <!-- アイコン使うためのもの -->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+        <!-- first-view-text h2で使うためのフォント 追記 -->
+        <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+
     </head>
     <body>
         <!--header ここから-->
         <header class="header">
             <div class="header-inner">
                 <a class="header-logo" href="index.html">
-                    <img src="images/common/logo.png" alt="ロゴ">
+                    <img id="image" src="./images/index/logo.png">
                 </a>
                 <button class="toggle-menu-button"></button>
                 <div class="header-site-menu">
                     <nav class="site-menu">
                         <ul>
                             <li><a href="index.html">HOME</a></li>
-                            <li><a href="news.html">ニュース</a></li>
                             <li><a href="recruit.html">採用情報</a></li>
                             <li><a href="contact.html">お問い合わせ</a></li>
                         </ul>
@@ -42,15 +49,42 @@
                 </ul>
             </nav>
 
-            <div class="first-view">
+            <div class="first-view-recruit">
                 <div class="first-view-text">
-                    <h1>名城大学情報工学部</h1>
-                    <p>想像以上を，創造しよう．</p>
+                    <h3>採用情報</h3>
                     <div class="lead">
-                        情報工学部は理工学部から独立したばかりです．
+                        KOSEDOの一員になる
                     </div>
                 </div>
             </div>
+            <div class="margin">
+            <div class="grid-container">
+                <div class="grid-item-white">
+                    <div class="item-color">
+                    <p>
+                        パート•アルバイト
+                    </p>
+                </div>
+                </div>
+                <div class="grid-item-white">
+                    <div class="item-color">
+                    <p>
+                        新卒
+                    </p>
+                    </div>
+                </div>
+                <div class="grid-item-white">
+                    <div class="item-color">
+                    <p>（キャリア）中途</p>
+                </div>
+                </div>
+                <div class="grid-item-white">
+                    <div class="item-color">
+                    <p>障がい者支援</p>
+                </div>
+                </div>
+            </div>
+        </div>
         </main>
         <!--main ここまで-->
 
@@ -59,7 +93,6 @@
             <nav class="site-menu">
                 <ul>
                     <li><a href="home.html">HOME</a></li>
-                    <li><a href="news.html">ニュース</a></li>
                     <li><a href="recruit.html">採用情報</a></li>
                     <li><a href="contact.html">お問い合わせ</a></li>
                 </ul>
